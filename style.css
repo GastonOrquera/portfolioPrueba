@@ -138,6 +138,8 @@ hr {
     padding: .8rem .8rem;
     border-top-left-radius: .6rem;
     border-bottom-left-radius: .6rem;
+    outline: none;
+    border-right: none;
 }
 
 .h {

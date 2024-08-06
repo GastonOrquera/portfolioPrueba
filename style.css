@@ -30,12 +30,12 @@
 }
 
 
-input,
+/* input,
 .btn {
     animation-name: transition;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-}
+} */
 
 @keyframes transition {
     0% {
@@ -236,6 +236,13 @@ hr {
     background-color: var(--bg-redes-hover);
 }
 
+.modal,
+.conteiner-modal,
+.conteiner-modal .bi,
+.bi-x {
+    display: none;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -324,6 +331,64 @@ hr {
         gap: .6rem;
     }
 
+    /* MODAL RESPONSIVE*/
+
+    .active.modal {
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .modal .active.conteiner-modal {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        place-items: center;
+        margin-top: 1.4rem;
+        background-color: var(--bg-card);
+        height: 20rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation-name: transition;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        z-index: 1;
+        border-radius: .8rem;
+    }
+
+    .modal .conteiner-modal>.active.bi {
+        display: block;
+        padding: .8rem;
+        border-radius: .6rem;
+    }
+
+    .modal .conteiner-modal>.active.bi:hover {
+        display: block;
+        padding: .8rem;
+        border-radius: .6rem;
+        background-color: var(--bg-redes-hover);
+    }
+
+    .box-red {
+        display: none;
+    }
+
+    hr {
+        z-index: -1;
+    }
+
+
+    .bi-x {
+        display: block;
+        cursor: pointer;
+        border-radius: .1rem;
+        background-color: var(--bg-card);
+        animation-name: transition;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        z-index: 2;
+    }
 
 
 

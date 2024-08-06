@@ -24,6 +24,29 @@
     --f-p: 'Victor Mono', sans-serif;
 }
 
+::selection,
+::-moz-selection {
+    background-color: var(--color-primary);
+}
+
+
+input,
+.btn {
+    animation-name: transition;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes transition {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: skew(1);
+    }
+}
+
 .conteiner {
     height: max-content;
     background-color: var(--bg-body);

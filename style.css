@@ -337,6 +337,7 @@ hr {
         position: relative;
         display: flex;
         justify-content: end;
+        margin-bottom: 1rem;
     }
 
     .modal .active.conteiner-modal {
@@ -344,8 +345,8 @@ hr {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         place-items: center;
-        margin-top: 1.4rem;
-        background-color: var(--bg-card);
+        margin-top: 2rem;
+        background-color: var(--color-hover);
         height: 20rem;
         top: 0;
         left: 0;
@@ -355,19 +356,21 @@ hr {
         animation-timing-function: ease-in-out;
         z-index: 1;
         border-radius: .8rem;
+
     }
 
     .modal .conteiner-modal>.active.bi {
         display: block;
         padding: .8rem;
         border-radius: .6rem;
+        transition: 300ms ease-in-out;
     }
 
     .modal .conteiner-modal>.active.bi:hover {
         display: block;
         padding: .8rem;
         border-radius: .6rem;
-        background-color: var(--bg-redes-hover);
+        background-color: var(--bg-card-hover);
     }
 
     .box-red {
@@ -382,12 +385,17 @@ hr {
     .bi-x {
         display: block;
         cursor: pointer;
-        border-radius: .1rem;
+        border-radius: .2rem;
         background-color: var(--bg-card);
         animation-name: transition;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
         z-index: 2;
+        font-size: 1.2rem;
+    }
+
+    .bi-x:hover {
+        background-color: var(--bg-card-hover);
     }
 
 
